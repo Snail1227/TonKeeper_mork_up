@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background: linear-gradient(90deg, #1f1f1f, #3a3a3a);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid #007BFF;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #007BFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.intro, .features, .use-cases, .graphics, .responsive-design {
+    margin: 2rem 0;
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature, .use-case {
+    margin-bottom: 2rem;
+}
+
+.feature h3, .use-case h3 {
+    margin-bottom: 0.5rem;
+    color: #007BFF;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.feature ul, .use-case ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.feature ul li, .use-case ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.graphic, .view {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.graphic img, .view img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature img, .use-case img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .feature, .use-case {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature div, .use-case div {
+        flex: 1;
+        margin-right: 1rem;
+    }
+
+    .feature div:last-child, .use-case div:last-child {
+        margin-right: 0;
+    }
+
+    .feature img, .use-case img {
+        margin-top: 0;
+    }
+}
